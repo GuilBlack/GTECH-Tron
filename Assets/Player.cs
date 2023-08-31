@@ -19,7 +19,7 @@ public class Player
     Material m_Material;
     Material m_LineMaterial;
 
-    Vector2 m_Direction;
+    protected Vector2 m_Direction;
     public Vector3 position;
     public CellCoord currentCell;
     float m_Velocity = 4f;
@@ -27,11 +27,10 @@ public class Player
 
     Line m_Line;
 
-    public Player(Vector2 position, Vector2 direction, Color colour)
+    public Player(Vector2 position, Vector2 direction)
     {
         m_Direction = direction;
         m_Line = new Line(position);
-
     }
 
     public void SetMesh(Mesh mesh)

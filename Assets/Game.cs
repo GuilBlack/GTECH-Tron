@@ -25,8 +25,8 @@ public class Game
     {
         m_Player = new Player[2]
         {
-            new Player(new Vector3(-5f, 0f, 0f), Vector2.left, Color.cyan),
-            new Player(new Vector3(5f, 0f, 0f), Vector2.right, Color.yellow)
+            new Player(new Vector3(-5f, 0f, 0f), Vector2.left),
+            new Player(new Vector3(5f, 0f, 0f), Vector2.right)
         };
         m_Sprite.Create(Color.red);
         m_Sprite.Create(Color.blue);
